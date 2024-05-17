@@ -145,6 +145,8 @@ footer {
     background-color: rgb(96, 37, 0);
     height: 35px;
     z-index: 1;
+    position: fixed;
+    bottom: 0;
 }
 
 footer ul {
