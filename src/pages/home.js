@@ -1,4 +1,12 @@
+// essential imports
 import React from "react";
+import { Link } from "react-router-dom";
+
+// page styling
+import '../assets/css/mainstyle.css';
+
+// java
+// import '../assets/js/signupfunction.js';
 
 class Home extends React.Component{
     render() {
@@ -11,26 +19,26 @@ class Home extends React.Component{
                     <input type="checkbox" id="hamburger-menu" className="mobile mobile-menu" />
                     <ul id="navmenu">
                         <li>
-                        <a href="index.html">Home</a>
+                        <Link to="/">Home</Link>
                         </li>
                         <li>
                         <a href="#" className="recipebutton">Recipes</a>
                         <div className="recipesubmenu">
                             <ul className="recipesubmenulist">
                             <li>
-                                <a href="recipepage1.html">Cappuccino</a>
+                                <Link to="/recipepage1">Cappuccino</Link>
                             </li>
                             <li>
-                                <a href="recipepage2.html">Iced Mocha</a>
+                                <Link to="/recipepage2">Iced Mocha</Link>
                             </li>
                             <li>
-                                <a href="recipepage3.html">Matcha Frappe</a>
+                                <Link to="/recipepage3">Matcha Frappe</Link>
                             </li>
                             </ul>
                         </div>
                         </li>
                         <li>
-                        <a href="aboutus.html">About Us</a>
+                        <Link to="/aboutus">About Us</Link>
                         </li>
                     </ul>
                     </nav>

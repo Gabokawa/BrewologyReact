@@ -62,19 +62,19 @@
 #row2 {
     
     padding-top: 45px;
-    background: url(../images/coffee1.jpg);
+    background: url(/public/assets/images/coffee1.jpg);
     background-size: cover;
 }
 
 #row3 {
     padding-top: 45px;
-    background: url(../images/coffee2.jpg);
+    background: url(/public/assets/images/coffee2.jpg);
     background-size: cover;
 }
 
 #row4 {
     padding-top: 45px;
-    background: url(../images/coffee3.jpg);
+    background: url(/public/assets/images/coffee3.jpg);
     background-size: cover;
 }
 
@@ -84,7 +84,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 45px;
-    background: url(../images/coffee4.jpg);
+    background: url(/public/assets/images/coffee4.jpg);
     background-size:cover;
 }
 
