@@ -2,18 +2,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// page styling
-import '../assets/css/recipepagestyling.css';
+//assets
+import headerlogo from '../assets/images/headerlogo.png';
 
-
-class aboutus extends React.Component{
+class Header extends React.Component{
     render() {
         return(
             <div>
                 <header className="baskervillefont">
-                    <a href="#row1"><div id="logo">
-                        <img src="images\headerlogo.png" />
-                    </div></a>
+                    <a href="#row1"><div id="logo"><img src={headerlogo} /></div></a>
                     <nav>
                     <label htmlFor="hamburger-menu" className="menu-icon"><i className="fas fa-bars" /></label>
                     <input type="checkbox" id="hamburger-menu" className="mobile mobile-menu" />
@@ -43,24 +40,9 @@ class aboutus extends React.Component{
                     </ul>
                     </nav>
                 </header>
-                <main>
-                    <div className="rows" id="row1">
-                    <div className="overlay" />
-                    <div className="content"><center><h1>ABOUT US HERE</h1></center></div>
-                    </div>
-                    <footer>
-                    <h4>Nacaytuna, Soriano Inc. All rights reserved</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy |</a></li>
-                        <li><a href="#">Accessibility |</a></li>
-                        <li><a href="#">Legal Notices</a></li>
-                    </ul>
-                    </footer>
-                </main>
             </div>
-
-        );
+        )
     }
 }
 
-export default aboutus;
+export default Header;

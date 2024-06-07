@@ -4,52 +4,28 @@ import { Link } from "react-router-dom";
 
 // page styling
 import '../assets/css/mainstyle.css';
+import '../assets/css/style.css';
 
-// java
-// import '../assets/js/signupfunction.js';
+//components
+import Header from '../components/header';
+import Footer from '../components/footer';
+
+//assets
+import coffeevid from '../assets/images/landingbgvid.mp4';
+import brewologylogo from '../assets/images/herologo.png';
 
 class Home extends React.Component{
     render() {
         return(
             <div>
-                <header className="baskervillefont">
-                    <a href="#row1"><div id="logo"><img src="/assets/images/headerlogo.png" /></div></a>
-                    <nav>
-                    <label htmlFor="hamburger-menu" className="menu-icon"><i className="fas fa-bars" /></label>
-                    <input type="checkbox" id="hamburger-menu" className="mobile mobile-menu" />
-                    <ul id="navmenu">
-                        <li>
-                        <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                        <a href="#" className="recipebutton">Recipes</a>
-                        <div className="recipesubmenu">
-                            <ul className="recipesubmenulist">
-                            <li>
-                                <Link to="/recipepage1">Cappuccino</Link>
-                            </li>
-                            <li>
-                                <Link to="/recipepage2">Iced Mocha</Link>
-                            </li>
-                            <li>
-                                <Link to="/recipepage3">Matcha Frappe</Link>
-                            </li>
-                            </ul>
-                        </div>
-                        </li>
-                        <li>
-                        <Link to="/aboutus">About Us</Link>
-                        </li>
-                    </ul>
-                    </nav>
-                </header>
+                <Header />
                 <main>
                     <div className="rows scrollsnapclass" id="row1">
                     <video autoPlay muted loop>
-                        <source src="/assets/images/landingbgvid.mp4" type="video/mp4" />
+                        <source src={coffeevid} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <img id="herologo" src="/assets/images/herologo.png" />
+                    <img id="herologo" src={brewologylogo} />
                     <a id="brewbutton" href="#row2"><div id="brewbuttoncontainer">
                         <h3 className="playfairdisplayfont" id="brewtext">Start Brewing</h3>
                         </div></a>
@@ -99,20 +75,13 @@ class Home extends React.Component{
                         <div id="signupmodal">
                         <center><h2>SIGN UP SUCCESS</h2></center>
                         <p>Your account with credentials: </p>
-                        <p id="emailstring">Default string</p>
+                        <p id="emailstring">Default sting</p>
                         <p id="pwordstring">Default string</p>
                         <p>has been added to our database</p>
                         </div>
                     </div>
                     </div>
-                    <footer>
-                    <h4>Nacaytuna, Soriano Inc. All rights reserved</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy |</a></li>
-                        <li><a href="#">Accessibility |</a></li>
-                        <li><a href="#">Legal Notices</a></li>
-                    </ul>
-                    </footer>
+                    <Footer />
                 </main>
             </div>
         );

@@ -5,49 +5,18 @@ import { Link } from "react-router-dom";
 // page styling
 import '../assets/css/recipepagestyling.css';
 
+//components
+import Header from '../components/header';
 
-
-class recipepage2 extends React.Component{
+class recipepage3 extends React.Component{
     render() {
         return(
             <div>
-                <header className="baskervillefont">
-                    <a href="#row1"><div id="logo">
-                        <img src="images\headerlogo.png" />
-                    </div></a>
-                    <nav>
-                    <label htmlFor="hamburger-menu" className="menu-icon"><i className="fas fa-bars" /></label>
-                    <input type="checkbox" id="hamburger-menu" className="mobile mobile-menu" />
-                    <ul id="navmenu">
-                        <li>
-                        <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                        <a href="#" className="recipebutton">Recipes</a>
-                        <div className="recipesubmenu">
-                            <ul className="recipesubmenulist">
-                            <li>
-                                <Link to="/recipepage1">Cappuccino</Link>
-                            </li>
-                            <li>
-                                <Link to="/recipepage2">Iced Mocha</Link>
-                            </li>
-                            <li>
-                                <Link to="/recipepage3">Matcha Frappe</Link>
-                            </li>
-                            </ul>
-                        </div>
-                        </li>
-                        <li>
-                        <Link to="/aboutus">About Us</Link>
-                        </li>
-                    </ul>
-                    </nav>
-                </header>
+                <Header />
                 <main>
-                    <div className="rows row1" id="rp2">
+                    <div className="rows row1" id="rp3">
                     <div className="overlay" />
-                    <div className="content"><center><h1>ICED MOCHA</h1></center></div>
+                    <div className="content"><center><h1>MATCHA FRAPPE</h1></center></div>
                     <div className="cards" id="card1">
                         <h1>Ingredients</h1>    
                     </div>
@@ -75,9 +44,8 @@ class recipepage2 extends React.Component{
                     </footer>
                 </main>
             </div>
-
         );
     }
 }
 
-export default recipepage2;
+export default recipepage3;

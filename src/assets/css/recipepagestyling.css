@@ -31,17 +31,17 @@ main {
 }
 
 #rp1 {
-    background: url(/public/assets/images/rp1bg.jpg);
+    background: url(../images/rp1bg.jpg);
     background-size: cover;
 }
 
 #rp2 {  
-    background: url(/public/assets/images/coffee2.jpg);
+    background: url(../images/coffee2.jpg);
     background-size: cover;
 }
 
 #rp3 {
-    background: url(/public/assets/images/coffee3.jpg);
+    background: url(../images/coffee3.jpg);
     background-size: cover;
 }
 
