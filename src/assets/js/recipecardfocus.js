@@ -27,16 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    //card click check old
-
-    // card.addEventListener("click",function() {
-    //     if (card.classList.contains("focused")) {
-    //         unfocusCard(card);
-    //         } else {
-    //         focusCard(card);
-    //         }
-    // });
-
     //card click check new
     cards.forEach(card => {
         card.addEventListener("click", function() {

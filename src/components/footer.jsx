@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 // page styling
 import '../assets/css/mainstyle.css';
-import '../assets/css/style.css';
 
 class footer extends React.Component{
     render() {
@@ -17,7 +16,7 @@ class footer extends React.Component{
                         <li><a href="#">Accessibility |</a></li>
                         <li><a href="#">Legal Notices</a></li>
                     </ul>
-                    </footer>
+                </footer>
             </div>
         )
     }

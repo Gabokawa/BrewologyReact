@@ -13,6 +13,7 @@ import Footer from '../components/footer';
 //assets
 import coffeevid from '../assets/images/landingbgvid.mp4';
 import brewologylogo from '../assets/images/herologo.png';
+import nextpic from '../assets/images/next.png';
 
 class Home extends React.Component{
     render() {
@@ -37,7 +38,7 @@ class Home extends React.Component{
                     </div>
                     <a href="#row3">
                         <div className="gonextbutton">
-                        <img className="nextpic" src="/assets/images/next.png" />
+                        <img className="nextpic" src={nextpic} />
                         </div>
                     </a>
                     </div>
@@ -48,7 +49,7 @@ class Home extends React.Component{
                     </div>
                     <a href="#row4">
                         <div className="gonextbutton">
-                        <img className="nextpic" src="/assets/images/next.png" />
+                        <img className="nextpic" src={nextpic} />
                         </div>
                     </a>
                     </div>
@@ -59,7 +60,7 @@ class Home extends React.Component{
                     </div>
                     <a href="#row5">
                         <div className="gonextbutton">
-                        <img className="nextpic" src="/assets/images/next.png" />
+                        <img className="nextpic" src={nextpic} />
                         </div>
                     </a>
                     </div>
