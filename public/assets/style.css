@@ -1,283 +1,272 @@
 /* WHOLE DOC */
 * {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0px;
-    font-family: alice;
+  margin: 0px;
+  font-family: alice;
 }
 
 /* global classes */
 .nostylelinks {
-    text-decoration: none;
-    color: black !important;
+  text-decoration: none;
+  color: black !important;
 }
-
 
 /* fonts classes */
 
 .baskervillefont {
-    font-family: Libre Baskerville;
+  font-family: Libre Baskerville;
 }
 
 .playfairdisplayfont {
-    font-family: Playfair Display;
+  font-family: Playfair Display;
 }
 /* HEADER */
 
-
 header {
-    padding: 10px 10px 5px 0px;
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 45px;
-    background-color: rgba(255, 255, 255, 0.9);
-    /* background-color: rgba(96, 37, 2, 0.5); */
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-    z-index: 3;
+  padding: 10px 10px 5px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  min-height: 45px;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* background-color: rgba(96, 37, 2, 0.5); */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  z-index: 3;
 }
 
 header nav {
-    position: fixed;
-    top: 20px;
-    right:0;
-    width: 100%;
-    text-align: right;
+  position: fixed;
+  top: 20px;
+  right: 0;
+  width: 100%;
+  text-align: right;
 }
 
-header nav label i{
-    position: fixed;
-    top: 20px;
-    right: 10px;
+header nav label i {
+  position: fixed;
+  top: 20px;
+  right: 10px;
 }
 header nav ul {
-    list-style: none;
-    margin: 0 15px;
-    padding: 0;
+  list-style: none;
+  margin: 0 15px;
+  padding: 0;
 }
 
 header nav ul li {
-    display: inline-block;
-    font-size: 20px;
-    margin-left: 20px;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 20px;
 }
 
 header nav ul li a:hover {
-    color: rgb(157, 157, 157);
+  color: rgb(157, 157, 157);
 }
-
 
 header nav ul li a {
-    color: rgb(96, 37, 2);
-    text-decoration: none;
+  color: rgb(96, 37, 2);
+  text-decoration: none;
 }
 
-
 header #logo img {
-    padding: 0;
-    margin: 0 10px;
-    height: 3vh;
+  padding: 0;
+  margin: 0 10px;
+  height: 3vh;
 }
 
 #logo {
-    position: fixed;
-    top: 9px;
-    width: 100px;
-    left: -1px;
-    z-index:2;
+  position: fixed;
+  top: 9px;
+  width: 100px;
+  left: -1px;
+  z-index: 2;
 }
 
 .recipesubmenu {
-    display: none;
-    padding: 0;
-    margin: 0;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    width: 7vw !important;
-    min-width: 130px;
+  display: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  width: 7vw !important;
+  min-width: 130px;
 }
 
 .recipesubmenulist {
-    text-decoration: none;
-    margin: 0;
-    padding: 5px;
+  text-decoration: none;
+  margin: 0;
+  padding: 5px;
 }
 
 .recipesubmenulist li {
-    font-size: fit-content;
-    margin: 0;
-    margin-bottom: 6px;
-    padding: 0;
+  font-size: fit-content;
+  margin: 0;
+  margin-bottom: 6px;
+  padding: 0;
 }
 
 .recipebutton:hover + .recipesubmenu,
 .recipesubmenu:hover {
-    display: flex;
-    flex-wrap: wrap;
-    width: 105px;
-    position: fixed;
-    background-color: rgba(200, 200, 200, 0.8);
-    right: 120px;
-    text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  width: 105px;
+  position: fixed;
+  background-color: rgba(200, 200, 200, 0.8);
+  right: 120px;
+  text-align: left;
 }
-
-
-
 
 /* MAIN */
 main {
-    margin: 0px;
-    padding: 0px;
-    display:flex;
-    width: 100%;
-    flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 /* FOOTER */
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: rgb(96, 37, 0);
-    height: 35px;
-    z-index: 1;
-    position: fixed;
-    bottom: 0;
-    left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(96, 37, 0);
+  height: 35px;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0px;
 }
 
 footer ul {
-    right: 0px;
-    list-style: none;
+  right: 0px;
+  list-style: none;
 }
 
 footer ul li {
-    display: inline;
+  display: inline;
 }
 
 footer ul li a {
-    text-decoration: none;
-    color: #F0F0F6;
+  text-decoration: none;
+  color: #f0f0f6;
 }
 
 footer h4 {
-    color: #F0F0F6;
-    margin: 0;
-    padding: 0;
+  color: #f0f0f6;
+  margin: 0;
+  padding: 0;
 }
 
-
 .mobile-menu {
-    position:absolute;
-    right:0;
-    visibility: hidden;
-    display: none;
-    padding: 0;
-    margin: 0;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+  display: none;
+  padding: 0;
+  margin: 0;
 }
 
 .mobile {
-    display: none;
+  display: none;
 }
 
 .menu-icon {
-    visibility: hidden;
+  visibility: hidden;
 }
 
-
 @media only screen and (max-width: 600px) {
-    #navmenu {
-        display:none;
-    }
+  #navmenu {
+    display: none;
+  }
 
-    .menu-icon {
-        visibility: visible;
-        position: fixed;
-        right: 10px;
-        top: 12px;
-    }
-    
-    .mobile-menu:checked + #navmenu {
-        display: block;
-        position: fixed;
-        right: 0;
-        top: 34px;
-        margin: 11px auto;
-        background-color: rgba(255, 255, 255, 0.8);
-        display: flex;
-        flex-direction: column;
-        height: 150px;
-        padding: 10px 10px;
-	    width: 100%;
-        align-items: center;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.8);
-    }
+  .menu-icon {
+    visibility: visible;
+    position: fixed;
+    right: 10px;
+    top: 12px;
+  }
 
-    .mobile {
-        display:block;
-    }
+  .mobile-menu:checked + #navmenu {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 34px;
+    margin: 11px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding: 10px 10px;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  }
 
-    /* #row1,
+  .mobile {
+    display: block;
+  }
+
+  /* #row1,
     #row2,
     #row3,
     #row4,
     #row5 {
         background-color: antiquewhite;
     } */
-    .mobile-menu:checked ~ ul li .recipesubmenu {
-        display: block;
-        box-shadow: none;
-        position: fixed;
-        right: 2%;
-        top: 50px;
-        text-align: left;
-
-    }
+  .mobile-menu:checked ~ ul li .recipesubmenu {
+    display: block;
+    box-shadow: none;
+    position: fixed;
+    right: 2%;
+    top: 50px;
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width: 520px) {
-    #navmenu {
-        display:none;
-    }
+  #navmenu {
+    display: none;
+  }
 
-    header nav label i {
-        right: 10vw;
-    }
-    .previewtext,
-    .previewtext2 {
-        width: 80%;
-    }
+  header nav label i {
+    right: 10vw;
+  }
+  .previewtext,
+  .previewtext2 {
+    width: 80%;
+  }
 
-    .menu-icon {
-        visibility: visible;
-        position: fixed;
-        right: 10px;
-        top: 12px;
-    }
-    
-    .mobile-menu:checked + #navmenu {
-        display: block;
-        position: fixed;
-        right: 0;
-        top: 34px;
-        margin: 11px auto;
-        background-color: rgba(255, 255, 255, 0.8);
-        display: flex;
-        flex-direction: column;
-        height: 150px;
-        padding: 10px 10px;
-	    width: 100%;
-        align-items: center;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.8);
-    }
+  .menu-icon {
+    visibility: visible;
+    position: fixed;
+    right: 10px;
+    top: 12px;
+  }
 
-    .mobile {
-        display:block;
-    }
+  .mobile-menu:checked + #navmenu {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 34px;
+    margin: 11px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding: 10px 10px;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  }
 
-    
+  .mobile {
+    display: block;
+  }
 }

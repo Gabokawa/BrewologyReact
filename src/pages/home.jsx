@@ -1,6 +1,7 @@
 // essential imports
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // page styling
 import '../assets/css/mainstyle.css';
@@ -19,6 +20,9 @@ class Home extends React.Component{
     render() {
         return(
             <div>
+                <Helmet>
+                    <title>Homepage - Brewology Coffee</title>
+                </Helmet>
                 <Header />
                 <main>
                     <div className="rows scrollsnapclass" id="row1">

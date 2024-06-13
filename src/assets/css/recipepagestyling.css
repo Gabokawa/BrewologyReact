@@ -107,3 +107,14 @@ main {
 .overlay.visible {
   display: block;
 }
+
+#aboutusimg1 {
+  height: 100vh;
+  width: 100%;
+  margin-top: 135px;
+}
+
+#aboutusimg2 {
+  height: 98vh;
+  width: 98%;
+}

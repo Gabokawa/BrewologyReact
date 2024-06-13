@@ -1,6 +1,7 @@
 // essential imports
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // page styling
 import "../assets/css/recipepagestyling.css";
@@ -14,6 +15,9 @@ class recipepage2 extends React.Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>Iced Mocha - Brewology Coffee</title>
+        </Helmet>
         <Header />
         <main>
           <div className="rows row1" id="rp2">
