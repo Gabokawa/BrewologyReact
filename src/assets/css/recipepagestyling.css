@@ -17,6 +17,9 @@
   align-items: center;
 }
 
+.recipeheader {
+  font-size: 8rem;
+}
 main {
   justify-content: center;
   align-items: center;
@@ -30,17 +33,17 @@ main {
 }
 
 #rp1 {
-  background: url(../images/rp1bg.jpg);
+  background: url(../images/coffee1.webp);
   background-size: cover;
 }
 
 #rp2 {
-  background: url(../images/coffee2.jpg);
+  background: url(../images/coffee2.webp);
   background-size: cover;
 }
 
 #rp3 {
-  background: url(../images/coffee3.jpg);
+  background: url(../images/coffee3.webp);
   background-size: cover;
 }
 
@@ -72,6 +75,9 @@ main {
   background-color: bisque;
 }
 
+.cards li {
+  font-size: 22px;
+}
 .cards h1 {
   padding: 0;
   margin: 0;

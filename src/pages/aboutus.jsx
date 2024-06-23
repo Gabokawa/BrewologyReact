@@ -13,8 +13,8 @@ import Footer from "../components/footer";
 import Cards from "../components/cards";
 
 //assets
-import aboutushero from "../assets/images/aboutusintro.jpg";
-import aboutusdevs from "../assets/images/aboutusdevs.jpg";
+import aboutushero from "../assets/images/aboutusintro.webp";
+import aboutusdevs from "../assets/images/aboutusdevs.webp";
 
 class aboutus extends React.Component {
   render() {
